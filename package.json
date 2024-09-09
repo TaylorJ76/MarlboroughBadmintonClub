@@ -1,44 +1,44 @@
 {
-	"name": "marlboroughbadmintonclub",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev --host",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
-	},
-	"devDependencies": {
-		"@skeletonlabs/skeleton": "2.10.2",
-		"@skeletonlabs/tw-plugin": "0.4.0",
-		"@sveltejs/adapter-static": "^3.0.4",
-		"@sveltejs/kit": "^2.5.25",
-		"@sveltejs/vite-plugin-svelte": "^3.1.2",
-		"@tailwindcss/forms": "0.5.8",
-		"@tailwindcss/typography": "0.5.15",
-		"@types/eslint": "^9.6.1",
-		"@types/node": "22.5.2",
-		"autoprefixer": "10.4.20",
-		"eslint": "^9.9.1",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-svelte": "^2.43.0",
-		"globals": "^15.9.0",
-		"postcss": "8.4.44",
-		"prettier": "^3.3.3",
-		"prettier-plugin-svelte": "^3.2.6",
-		"svelte": "^4.2.19",
-		"svelte-check": "^3.8.6",
-		"tailwindcss": "3.4.10",
-		"typescript": "^5.5.4",
-		"typescript-eslint": "^8.3.0",
-		"vite": "^5.4.2",
-		"vite-plugin-tailwind-purgecss": "0.3.3"
-	},
-	"type": "module",
-	"dependencies": {
-		"@floating-ui/dom": "1.6.10"
-	}
+  "name": "marlboroughbadmintonclub",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@skeletonlabs/skeleton": "2.10.2",
+    "@skeletonlabs/tw-plugin": "0.4.0",
+    "@sveltejs/adapter-static": "^3.0.4",
+    "@sveltejs/kit": "^2.5.25",
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "@tailwindcss/forms": "0.5.8",
+    "@tailwindcss/typography": "0.5.15",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "22.5.2",
+    "autoprefixer": "10.4.20",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-svelte": "^2.43.0",
+    "globals": "^15.9.0",
+    "postcss": "8.4.44",
+    "prettier": "^3.3.3",
+    "prettier-plugin-svelte": "^3.2.6",
+    "svelte": "^4.2.19",
+    "svelte-check": "^3.8.6",
+    "tailwindcss": "3.4.10",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.3.0",
+    "vite": "^5.4.2",
+    "vite-plugin-tailwind-purgecss": "0.3.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "@floating-ui/dom": "1.6.10"
+  }
 }
