@@ -1,3 +1,1 @@
-<div>
-    Content
-</div>
+<div>Content</div>
