@@ -5,14 +5,18 @@
   import { arrow, autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom';
   import { LightSwitch, storePopup } from '@skeletonlabs/skeleton';
 
+  import Logo from '../components/Logo.svelte';
+
   storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
 <div class="ml-4 mr-4">
   <header>
-    <div class="flex items-center justify-between pt-1 pb-1">
-      <h1>Marlborough Badminton</h1>
-      <LightSwitch />
+    <div class="relative flex justify-center pt-1 pb-1">
+      <Logo />
+      <div class="absolute right-0">
+        <LightSwitch />
+      </div>
     </div>
   </header>
   <main>
