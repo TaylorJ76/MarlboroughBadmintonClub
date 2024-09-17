@@ -3,7 +3,7 @@
 
   // Floating UI for Popups
   import { arrow, autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom';
-  import { LightSwitch, storePopup } from '@skeletonlabs/skeleton';
+  import { storePopup } from '@skeletonlabs/skeleton';
 
   import Logo from '../components/Logo.svelte';
 
@@ -14,9 +14,6 @@
   <header>
     <div class="relative flex justify-center pt-1 pb-1">
       <Logo />
-      <div class="absolute right-0">
-        <LightSwitch />
-      </div>
     </div>
   </header>
   <main>
