@@ -6,6 +6,7 @@
   import { storePopup } from '@skeletonlabs/skeleton';
 
   import Logo from '../components/Logo.svelte';
+  import Sidebar from '../components/Sidebar.svelte';
 
   storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
@@ -16,7 +17,12 @@
       <Logo />
     </div>
   </header>
+
   <main>
     <slot />
   </main>
+
+  <aside>
+    <Sidebar />
+  </aside>
 </div>

@@ -39,6 +39,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@floating-ui/dom": "1.6.10"
+    "@floating-ui/dom": "1.6.10",
+    "lucide-svelte": "^0.446.0"
   }
 }
