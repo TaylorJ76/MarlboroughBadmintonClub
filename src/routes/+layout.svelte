@@ -5,10 +5,28 @@
   import { arrow, autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom';
   import { storePopup } from '@skeletonlabs/skeleton';
 
+  import { History, UsersRound } from 'lucide-svelte';
+
   import Logo from '../components/Logo.svelte';
+  import Navigation from '../components/Navigation.svelte';
   import Sidebar from '../components/Sidebar.svelte';
 
+  import type { MenuItem } from '../types';
+
   storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+  const menuItems: MenuItem[] = [
+    {
+      name: 'History',
+      route: '/history',
+      icon: History
+    },
+    {
+      name: 'Committee',
+      route: '/committee',
+      icon: UsersRound
+    }
+  ];
 </script>
 
 <div class="ml-4 mr-4">
@@ -19,12 +37,19 @@
   </header>
 
   <main>
-    <slot />
+    <div class="flex p-2">
+      <div class="hidden md:block w-64">
+        <Navigation {menuItems} />
+      </div>
+      <slot />
+    </div>
   </main>
 
   <aside>
     <div class="md:hidden">
-      <Sidebar />
+      <Sidebar>
+        <Navigation {menuItems} />
+      </Sidebar>
     </div>
   </aside>
 </div>
