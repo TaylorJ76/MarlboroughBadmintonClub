@@ -23,6 +23,8 @@
   </main>
 
   <aside>
-    <Sidebar />
+    <div class="md:hidden">
+      <Sidebar />
+    </div>
   </aside>
 </div>

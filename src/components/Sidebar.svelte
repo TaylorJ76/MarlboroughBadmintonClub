@@ -10,7 +10,7 @@
 </script>
 
 {#if isOpen}
-  <button class="fixed inset-0 bg-gray-50 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50 z-40" on:click={toggleOpen} />
+  <div class="fixed inset-0 bg-gray-50 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50 z-40" on:click={toggleOpen} aria-hidden="true" />
 
   <div class="fixed top-0 left-0 w-64 bg-gray-800 h-full shadow-lg z-50 p-6 transform" in:fly={{ x: -300, duration: 300 }} out:fly={{ x: -300, duration: 300 }}>
     <slot></slot>
