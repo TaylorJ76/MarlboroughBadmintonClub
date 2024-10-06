@@ -9,13 +9,7 @@
   <ul>
     {#each menuItems as item}
       <li>
-        <button
-          class="flex items-center p-2"
-          on:click={() => {
-            console.log(base + item.route);
-            goto(base + item.route);
-          }}
-        >
+        <button class="flex items-center p-2" on:click={() => goto(base + item.route)}>
           <svelte:component this={item.icon} class="mr-2 w-5 h-5" />
           <span>{item.name}</span>
         </button>
