@@ -41,7 +41,9 @@
       <div class="hidden md:block w-64">
         <Navigation {menuItems} />
       </div>
-      <slot />
+      <div class="p-2">
+        <slot />
+      </div>
     </div>
   </main>
 
