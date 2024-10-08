@@ -1,12 +1,14 @@
 export enum CommitteeRole {
+  None, // None is necessary because 0 is a falsey value. Checking the enum exists will return false for value 0.
   Chair,
-  Secretary
+  Secretary,
+  Treasurer,
+  MatchSecretary,
+  WelfareOfficer,
+  SocialSecretary
 }
 
 export interface CommitteeMember {
-  role: CommitteeRole;
-  preferredName: string;
-  firstName: string;
-  lastName: string;
-  photo?: string;
+  name: string;
+  role?: CommitteeRole;
 }

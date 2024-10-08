@@ -4,10 +4,37 @@
 
   const committeeMembers: CommitteeMember[] = [
     {
-      role: CommitteeRole.Secretary,
-      preferredName: 'Nick',
-      firstName: 'Nick',
-      lastName: 'Darlow'
+      name: 'Jodie Gray',
+      role: CommitteeRole.Chair
+    },
+    {
+      name: 'Nick Darlow',
+      role: CommitteeRole.Secretary
+    },
+    {
+      name: 'Es Collins',
+      role: CommitteeRole.Treasurer
+    },
+    {
+      name: 'Simon Mills',
+      role: CommitteeRole.MatchSecretary
+    },
+    {
+      name: 'Dilushi Jayasingha (DJ)',
+      role: CommitteeRole.WelfareOfficer
+    },
+    {
+      name: 'Hung Tran',
+      role: CommitteeRole.SocialSecretary
+    },
+    {
+      name: 'Phil Hassell'
+    },
+    {
+      name: 'Ruta Seske'
+    },
+    {
+      name: 'Tim Zollman'
     }
   ];
 </script>
