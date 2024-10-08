@@ -5,8 +5,6 @@
   import { arrow, autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom';
   import { storePopup } from '@skeletonlabs/skeleton';
 
-  import { History, UsersRound } from 'lucide-svelte';
-
   import Logo from '../components/Logo.svelte';
   import Navigation from '../components/Navigation.svelte';
   import Sidebar from '../components/Sidebar.svelte';
@@ -18,13 +16,11 @@
   const menuItems: MenuItem[] = [
     {
       name: 'History',
-      route: '/history',
-      icon: History
+      route: '/history'
     },
     {
       name: 'Committee',
-      route: '/committee',
-      icon: UsersRound
+      route: '/committee'
     }
   ];
 </script>
