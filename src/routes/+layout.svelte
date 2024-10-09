@@ -25,7 +25,7 @@
   ];
 </script>
 
-<div class="ml-4 mr-4">
+<div class="m-4">
   <header>
     <div class="relative flex justify-center pt-1 pb-1">
       <Logo />
