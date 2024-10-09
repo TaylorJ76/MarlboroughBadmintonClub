@@ -32,7 +32,7 @@
     <img class="h-32 w-32 rounded-full" src={portraitPath} alt={member.name} />
   {:else}
     <div class="flex h-32 w-32 rounded-full items-center justify-center bg-gray-200 dark:bg-gray-700">
-      <UserRound class="h-24 w-24 rounded-full" />
+      <UserRound class="h-16 w-16 rounded-full" />
     </div>
   {/if}
 
