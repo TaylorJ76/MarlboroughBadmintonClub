@@ -34,20 +34,16 @@
 
   <main>
     <div class="flex p-2">
-      <div class="hidden md:block w-64">
+      <nav class="hidden md:block w-64">
         <Navigation {menuItems} />
-      </div>
+      </nav>
       <div class="p-2">
         <slot />
       </div>
     </div>
   </main>
 
-  <aside>
-    <div class="md:hidden">
-      <Sidebar>
-        <Navigation {menuItems} />
-      </Sidebar>
-    </div>
-  </aside>
+  <Sidebar>
+    <Navigation {menuItems} />
+  </Sidebar>
 </div>
