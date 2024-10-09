@@ -18,6 +18,7 @@
   on:click={toggleOpen} 
   aria-label={buttonLabel} 
   aria-controls="mobile-nav"
+  aria-expanded={isOpen}
 >
   {#if isOpen}
     <CircleX class="w-10 h-10" />
