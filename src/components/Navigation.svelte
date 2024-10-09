@@ -9,9 +9,9 @@
   <ul>
     {#each menuItems as item}
       <li>
-        <button class="flex items-center p-2" on:click={() => goto(base + item.route)}>
+        <a class="flex items-center p-2" href={base + item.route} on:click={(e) => { e.preventDefault(); goto(base + item.route); }}>
           <span>{item.name}</span>
-        </button>
+        </a>
       </li>
     {/each}
   </ul>
