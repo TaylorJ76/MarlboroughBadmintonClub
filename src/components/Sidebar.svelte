@@ -40,7 +40,6 @@
       class="fixed top-0 left-0 w-64 bg-gray-100 dark:bg-gray-800 h-full shadow-lg z-20 p-6 transform"
       in:fly={{ x: -300, duration: 300 }}
       out:fly={{ x: -300, duration: 300 }}
-      aria-labelledby="nav-label"
       role="dialog"
     >
       <div class="pt-16">
