@@ -25,6 +25,6 @@
   </div>
 {/if}
 
-<button class="absolute left-2 top-2 p-3 z-50" on:click={toggleOpen}>
+<button class="fixed left-2 top-2 p-3 z-50" on:click={toggleOpen}>
   <Menu class="w-10 h-10" />
 </button>
