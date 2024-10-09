@@ -1,24 +1,11 @@
 <script lang="ts">
   import { type CommitteeMember, CommitteeRole } from './CommitteeMember';
   import { UserRound } from 'lucide-svelte';
+  import { base } from '$app/paths';
 
   export let member: CommitteeMember;
 
-  const portraitPath = `/portraits/${member.name.replace(/ /g, '_').toLowerCase()}.jpg`;
-  let portraitExists = false;
-
-  async function checkPortraitExists() {
-    try {
-      const response = await fetch(portraitPath);
-      if (response.ok) {
-        portraitExists = true;
-      }
-    } catch {
-      // Do nothing
-    }
-  }
-
-  checkPortraitExists();
+  const portraitPath = `${base}/portraits/${member.portrait}`;
 
   function roleToString(role: CommitteeRole) {
     switch (role) {
@@ -41,7 +28,7 @@
 </script>
 
 <div class="flex space-x-4 items-center">
-  {#if portraitExists}
+  {#if member.portrait}
     <img class="h-32 w-32 rounded-full" src={portraitPath} alt={member.name} />
   {:else}
     <div class="flex h-32 w-32 rounded-full items-center justify-center bg-gray-200 dark:bg-gray-700">

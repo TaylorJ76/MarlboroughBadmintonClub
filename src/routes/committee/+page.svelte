@@ -9,7 +9,8 @@
     },
     {
       name: 'Nick Darlow',
-      role: CommitteeRole.Secretary
+      role: CommitteeRole.Secretary,
+      portrait: 'nick.jpg'
     },
     {
       name: 'Es Collins',

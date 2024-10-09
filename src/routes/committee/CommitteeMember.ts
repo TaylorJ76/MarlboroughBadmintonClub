@@ -11,4 +11,5 @@ export enum CommitteeRole {
 export interface CommitteeMember {
   name: string;
   role?: CommitteeRole;
+  portrait?: string;
 }
